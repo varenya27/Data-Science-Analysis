@@ -33,6 +33,7 @@ for i in i_plot:
     plt.savefig('3gmm_{}'.format(str(i+1))+'.png')
 
 #plotting the aic and bic values
+i=np.argmin(aic)
 plt.figure(figsize=(9,7))
 plt.plot(n_comp,aic,label='AIC',ls='--',color='#B99B6B',lw=3)
 plt.plot(n_comp,bic,label='BIC',color='#B99B6B',lw=3)
